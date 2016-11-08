@@ -59,7 +59,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Deployment\Deploy.ps1" />
+    <None Include="Deploy.ps1" />
     <None Include="packages.config" />
     <None Include="TCAndOctopusTest.DbInit.nuspec" />
   </ItemGroup>
