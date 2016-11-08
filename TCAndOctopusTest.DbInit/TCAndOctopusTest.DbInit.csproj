@@ -61,6 +61,7 @@
     </None>
     <None Include="Deploy.ps1" />
     <None Include="packages.config" />
+    <None Include="TCAndOctopusTest.DbInit.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TCAndOctopusTest.Db\TCAndOctopusTest.Db.csproj">

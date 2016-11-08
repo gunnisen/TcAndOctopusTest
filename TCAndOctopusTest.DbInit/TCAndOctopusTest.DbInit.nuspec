@@ -16,7 +16,7 @@
 	</metadata>
 	<files>
 		<file src="bin\Release\*.*" target="content" />
-		<file src="..\packages\EntityFramework.6.1.3\tools\migrate.exe" target="content" />
-		<file src="Deployment\Deploy.ps1" target="" />
+		<!--<file src="..\packages\EntityFramework.6.1.3\tools\migrate.exe" target="content" />-->
+		<file src="Deploy.ps1" target="" />
 	</files>
 </package>
