@@ -15,8 +15,8 @@ namespace TCAndOctopusTest.DbInit
                     Console.WriteLine($"{album.Artist.Name} - {album.Title}");
                 }
             }
-            Console.WriteLine("(Press <ENTER> to quit.)");
-            Console.ReadLine();
+            //Console.WriteLine("(Press <ENTER> to quit.)");
+            //Console.ReadLine();
         }
     }
 }
