@@ -1,4 +1,6 @@
-﻿& ".\TCAndOctopusTest.DbInit.exe"
+﻿Write-Host "Will run TCAndOctopusTest.DbInit.exe..."
+& ".\TCAndOctopusTest.DbInit.exe"
+Write-Host "TCAndOctopusTest.DbInit.exe completed."
 
 
 #Write-Host "Connection String: <"$ConnectionString">"
