@@ -3,13 +3,13 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+<div class="page-header">
     <h1>TeamCity and Octopus Deploy Test Web App</h1>
 </div>
 
 @foreach (var album in Model) {
     <div class="row">
-        <div class="col-md-2">@album.Artist</div>
+        <div class="col-md-2">@album.Artist.Name</div>
         <div class="col-md-2">@album.Title</div>
     </div>
 }

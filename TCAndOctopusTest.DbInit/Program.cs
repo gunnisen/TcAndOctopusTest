@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity.Migrations;
+using System.Diagnostics;
 using TCAndOctopusTest.Db;
 using TCAndOctopusTest.Db.Migrations;
 
@@ -23,8 +24,11 @@ namespace TCAndOctopusTest.DbInit
                     Console.WriteLine($"{album.Artist.Name} - {album.Title}");
                 }
             }
-            //Console.WriteLine("(Press <ENTER> to quit.)");
-            //Console.ReadLine();
+            if (Debugger.IsAttached)
+            {
+                Console.WriteLine("(Press <ENTER> to quit.)");
+                Console.ReadLine();
+            }
         }
     }
 }

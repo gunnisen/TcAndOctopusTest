@@ -1,17 +1,17 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using TCAndOctopusTest.Db;
 
 namespace TCAndOctopusTestWeb.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly MyDbContext _db = new MyDbContext();
+
         public ActionResult Index()
         {
-            using (var db = new MyDbContext())
-            {
-                var albums = db.Albums.Include("Artist");
-                return View(albums);
-            }
+            var albums = _db.Albums.Include("Artist").ToList();
+            return View(albums);
         }
 
         public ActionResult About()
