@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using TCAndOctopusTest.Db;
 
 namespace TCAndOctopusTestWeb.Controllers
 {
@@ -10,7 +7,11 @@ namespace TCAndOctopusTestWeb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            using (var db = new MyDbContext())
+            {
+                var albums = db.Albums.Include("Artist");
+                return View(albums);
+            }
         }
 
         public ActionResult About()
