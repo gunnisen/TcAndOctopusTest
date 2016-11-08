@@ -1,4 +1,4 @@
-﻿#& ".\TCAndOctopusTest.DbInit.exe"
+﻿& ".\TCAndOctopusTest.DbInit.exe"
 
 
 #Write-Host "Connection String: <"$ConnectionString">"
