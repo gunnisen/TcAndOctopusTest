@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCAndOctopusTest.Web", "TCA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCAndOctopusTest.WinSvc", "TCAndOctopusTest.WinSvc\TCAndOctopusTest.WinSvc.csproj", "{FA7C85B8-6D7D-4A2D-AF61-055BB00B20AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCAndOctopusTest.Db", "TCAndOctopusTest.Db\TCAndOctopusTest.Db.csproj", "{DFA90F64-9D53-440E-8006-C2E213F3374C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCAndOctopusTest.DbInit", "TCAndOctopusTest.DbInit\TCAndOctopusTest.DbInit.csproj", "{A4A8AC78-2639-4417-97F5-073E409A2C5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FA7C85B8-6D7D-4A2D-AF61-055BB00B20AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA7C85B8-6D7D-4A2D-AF61-055BB00B20AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA7C85B8-6D7D-4A2D-AF61-055BB00B20AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA90F64-9D53-440E-8006-C2E213F3374C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA90F64-9D53-440E-8006-C2E213F3374C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA90F64-9D53-440E-8006-C2E213F3374C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA90F64-9D53-440E-8006-C2E213F3374C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A8AC78-2639-4417-97F5-073E409A2C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A8AC78-2639-4417-97F5-073E409A2C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A8AC78-2639-4417-97F5-073E409A2C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A8AC78-2639-4417-97F5-073E409A2C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

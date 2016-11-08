@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+	<metadata>
+		<id>TCAndOctopusTest.DbInit</id>
+		<version>$version$</version>
+		<title>TCAndOctopusTest.DbInit</title>
+		<authors>Gunnar Sylthe</authors>
+		<owners>Gunnar Sylthe</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Database deployment package</description>
+		<copyright>Copyright &#0169; 2016, $author$</copyright>
+		<frameworkAssemblies>
+		</frameworkAssemblies>
+		<dependencies>
+		</dependencies>
+		<files>
+			<file src="bin\Release\*.*" target="content" />
+			<file src="..\packages\EntityFramework.6.1.3\tools\migrate.exe" target="content" />
+			<file src="Deployment\Deploy.ps1" target="" />
+		</files>
+	</metadata>
+</package>
