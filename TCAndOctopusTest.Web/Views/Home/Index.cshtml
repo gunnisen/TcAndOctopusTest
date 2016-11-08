@@ -1,10 +1,11 @@
-﻿@model IEnumerable<TCAndOctopusTest.Db.Album>
+﻿@using System.Configuration
+@model IEnumerable<TCAndOctopusTest.Db.Album>
 @{
     ViewBag.Title = "Home Page";
 }
 
 <div class="page-header">
-    <h1>TeamCity and Octopus Deploy Test Web App</h1>
+    <h1>TeamCity and Octopus Deploy Test Web App <small>@ConfigurationManager.AppSettings["Environment"]</small></h1>
 </div>
 
 @foreach (var album in Model) {
