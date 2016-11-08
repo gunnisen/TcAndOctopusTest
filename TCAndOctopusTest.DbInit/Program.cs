@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data.Entity.Migrations;
 using TCAndOctopusTest.Db;
+using TCAndOctopusTest.Db.Migrations;
 
 namespace TCAndOctopusTest.DbInit
 {
@@ -7,6 +9,12 @@ namespace TCAndOctopusTest.DbInit
     {
         static void Main(string[] args)
         {
+
+            var configuration = new Configuration();
+            configuration.ContextType = typeof(MyDbContext);
+            var migrator = new DbMigrator(configuration);
+            migrator.Update();
+
             using (var db = new MyDbContext())
             {
                 var albums = db.Albums.Include("Artist");

@@ -2,7 +2,7 @@ namespace TCAndOctopusTest.Db.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TCAndOctopusTest.Db.MyDbContext>
+    public sealed class Configuration : DbMigrationsConfiguration<TCAndOctopusTest.Db.MyDbContext>
     {
         public Configuration()
         {
