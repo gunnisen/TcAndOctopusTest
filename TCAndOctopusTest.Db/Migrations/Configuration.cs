@@ -20,14 +20,16 @@ namespace TCAndOctopusTest.Db.Migrations
         protected override void Seed(TCAndOctopusTest.Db.MyDbContext context)
         {
             context.Artists.AddOrUpdate(x => x.Id,
-                new Artist() { Id = 1, Name = "John Kinn" }
+                new Artist() { Id = 1, Name = "John Kinn" },
+                new Artist() { Id = 2, Name = "Eva Dyveke Sakshaug (Eva D)" }
             );
 
             context.Albums.AddOrUpdate(x => x.Id,
                 new Album() { Id = 1, ArtistId = 1, Title = "Marokko" },
                 new Album() { Id = 2, ArtistId = 1, Title = "Kongens Plass" },
                 new Album() { Id = 3, ArtistId = 1, Title = "Love & Lyg" },
-                new Album() { Id = 4, ArtistId = 1, Title = "Høst" }
+                new Album() { Id = 4, ArtistId = 1, Title = "Høst" },
+                new Album() { Id = 5, ArtistId = 2, Title = "Hvis du behøve mæ" }
             );
 
             context.SaveChanges();
